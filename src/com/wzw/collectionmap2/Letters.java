@@ -46,6 +46,6 @@ public class Letters implements Generator<Pair<Integer, String>>, Iterable<Integ
         System.out.println(list);
         Integer a = Integer.decode("123");
         System.out.println(a);
-
+        Objects.hashCode("a");
     }
 }
