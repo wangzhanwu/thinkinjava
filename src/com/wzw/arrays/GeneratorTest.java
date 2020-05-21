@@ -12,6 +12,7 @@ public class GeneratorTest {
                 for (int i = 0; i < size; i++) {
                     System.out.printf(gen.next() + " ");
                 }
+                System.out.println();
             } catch (InstantiationException e) {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {
