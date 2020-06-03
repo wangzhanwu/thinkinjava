@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class InsertionSort {
 
     public static void main(String[] args) {
-        int[] array = {5, 3, 4, 6,2};
+        int[] array = {5, 3, 4, 6, 2};
         print(sort0(array));
     }
 
