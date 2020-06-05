@@ -1,5 +1,8 @@
 package com.wzw.sort;
 
+/**
+ * 折半查找
+ */
 public class BinarySearch {
 
     public static int search(int[] array, int key) {

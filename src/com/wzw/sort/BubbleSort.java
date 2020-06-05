@@ -3,14 +3,14 @@ package com.wzw.sort;
 import java.util.Arrays;
 
 /**
- * 冒泡排序
+ * 冒泡排序 O(n2)
  */
 public class BubbleSort {
     private static int[] array = {2,1,3,4,5,6,7,8,9};
 
     public static void main(String[] args) {
-        print(array);
-        print(sort2(array));
+        PSUtil.print(array);
+        PSUtil.print(sort2(array));
 
     }
 
@@ -21,7 +21,7 @@ public class BubbleSort {
             flag = false;
             for (int j = arrayCopy.length-2; j >= i ; j--) {
                 if (arrayCopy[j] > arrayCopy[j+1]) {
-                    swap(arrayCopy, j, j + 1);
+                    PSUtil.swap(arrayCopy, j, j + 1);
                     flag = true;
                 }
             }
@@ -40,7 +40,7 @@ public class BubbleSort {
         for (int i = 0; i < arrayCopy.length; i++) {
             for (int j = arrayCopy.length-2; j >=i ; j--) {
                 if (arrayCopy[j] > arrayCopy[j+1]) {
-                    swap(arrayCopy, j, j+1);
+                    PSUtil.swap(arrayCopy, j, j+1);
                 }
             }
         }
@@ -57,21 +57,10 @@ public class BubbleSort {
         for (int i = 0; i < arrayCopy.length-1; i++) {
             for (int j = i + 1; j < arrayCopy.length; j++) {
                 if (arrayCopy[i] > arrayCopy[j]) {
-                    swap(arrayCopy, i, j);
+                    PSUtil.swap(arrayCopy, i, j);
                 }
             }
         }
         return arrayCopy;
-    }
-
-    /*================工具方法==============*/
-    private static void swap(int[] array, int i, int j) {
-        int tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
-    }
-
-    private static void print(int[] array) {
-        System.out.println(Arrays.toString(array));
     }
 }

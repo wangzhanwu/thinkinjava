@@ -3,13 +3,13 @@ package com.wzw.sort;
 import java.util.Arrays;
 
 /**
- * 直接插入排序
+ * 直接插入排序 O(n2)
  */
 public class InsertionSort {
 
     public static void main(String[] args) {
         int[] array = {5, 3, 4, 6, 2};
-        print(sort0(array));
+        PSUtil.print(sort0(array));
     }
 
     public static int[] sort0(int[] array) {
@@ -26,10 +26,5 @@ public class InsertionSort {
         }
 
         return arrayCopy;
-    }
-
-
-    private static void print(int[] array) {
-        System.out.println(Arrays.toString(array));
     }
 }

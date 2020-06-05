@@ -3,7 +3,7 @@ package com.wzw.sort;
 import java.util.Arrays;
 
 /**
- * 选择排序
+ * 选择排序 O(n2)
  */
 public class SelectionSort {
 
